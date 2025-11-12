@@ -67,3 +67,31 @@ Create an accessible platform tailored to underserved communities.
 Include quizzes, progress tracking, and gamification to encourage learning.
 
 Potential partnerships with NGOs, schools, or local organizations.
+
+## 6. Setup & Configuration
+
+- **Environment variables**
+  - `server/.env`
+    - `MONGO_URI=<your Mongo connection string>`
+    - `CLERK_SECRET_KEY=<Clerk secret key>`
+    - Any other backend-specific settings (e.g. `PORT`)
+  - `client/.env`
+    - `VITE_CLERK_PUBLISHABLE_KEY=<Clerk publishable key>`
+    - `VITE_API_URL=http://localhost:5000/api` (or your deployed API origin)
+
+- **Authentication**
+  - Clerk handles sign-in/sign-up UI (`/login`, `/register` routes) and session tokens.
+  - Backend routes expect a valid Clerk session token via the `Authorization: Bearer <token>` header.
+  - Local user records are synchronised automatically from Clerk on first authenticated request.
+
+- **Running locally**
+  - Install dependencies:
+    - `npm install` inside both `client/` and `server/`
+  - Start services:
+    - Backend: `npm run dev` (or the configured start script) from `server/`
+    - Frontend: `npm run dev` from `client/`
+  - Ensure Clerk allowed origins include your local frontend URL (default `http://localhost:5173`).
+
+- **Testing & QA recommendations**
+  - Add integration tests covering Clerk-protected routes once credentials are configured.
+  - Exercise enrolment/progress flows to confirm state updates without full page reloads.
