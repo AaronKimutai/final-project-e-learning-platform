@@ -21,7 +21,8 @@ require('./models/Course');
 require('./models/Lesson'); 
 require('./models/Chat');
 require('./models/Quiz');
-require('./models/quizResult')
+require('./models/quizResult');
+require('./models/Progress');
 
 // initialize express app
 const app = express();
