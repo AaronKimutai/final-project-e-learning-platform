@@ -3,7 +3,7 @@ import { useAuth as useClerkAuth } from "@clerk/clerk-react";
 import NavBar from "./components/NavBar.jsx";
 import Home from "./pages/Home.jsx";
 import Courses from "./pages/Courses.jsx";
-import Dashboard from "./pages/Dashboard.jsx";
+import Dashboard from "./pages/DashBoard.jsx";
 import CourseDetails from "./pages/CourseDetails.jsx";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
