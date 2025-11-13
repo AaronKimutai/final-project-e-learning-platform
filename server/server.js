@@ -30,7 +30,7 @@ const app = express();
 // middlewares
 app.use(express.json());
 app.use(cors({
-  origin: ["https://e-learning-frontend.vercel.app", "http://localhost:5173"],
+  origin: ["https://final-project-e-learning-platform-6.vercel.app/"],
   credentials: true
 }));
 
