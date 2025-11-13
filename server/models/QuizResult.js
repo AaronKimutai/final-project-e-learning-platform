@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// create a quiz result schema
 const quizResultSchema = new mongoose.Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
