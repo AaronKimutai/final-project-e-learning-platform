@@ -50,7 +50,7 @@ Many underprivileged children lack access to quality educational resources. Trad
 
 Existing Platforms:
 
-Khan Academy, Coursera, Udemy: Provide high-quality content but are often general, English-focused, or partially paid.
+Khan Academy, Coursera, Udemy: Provide high-quality content but are often general, or partially paid.
 
 ### Gap:
 
@@ -94,4 +94,9 @@ Potential partnerships with NGOs, schools, or local organizations.
 
 - **Testing & QA recommendations**
   - Add integration tests covering Clerk-protected routes once credentials are configured.
-  - Exercise enrolment/progress flows to confirm state updates without full page reloads.
+  - Exercise enrolment/progress flows to confirm state updates without full page reloads.  
+
+  ## 7. Live Demo  
+
+You can access the deployed application here:   
+[Final Project E-learning Platform](https://final-project-e-learning-platform.vercel.app)
