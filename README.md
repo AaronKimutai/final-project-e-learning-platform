@@ -96,7 +96,7 @@ Potential partnerships with NGOs, schools, or local organizations.
   - Add integration tests covering Clerk-protected routes once credentials are configured.
   - Exercise enrolment/progress flows to confirm state updates without full page reloads.  
 
-  ## 7. Live Demo  
+## 7. Live Demo  
 
 You can access the deployed application here:   
 [Final Project E-learning Platform](https://final-project-e-learning-platform.vercel.app)
